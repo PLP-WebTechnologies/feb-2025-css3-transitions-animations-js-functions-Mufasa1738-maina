@@ -1,0 +1,55 @@
+/* Reset some basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  margin: 20px auto;
+  transition: all 0.5s ease-in-out; /* Smooth transition */
+  opacity: 1;
+}
+
+/* Animation class */
+.animate {
+  transform: translateX(200px);  /* Move box horizontally */
+  opacity: 0.5;  /* Fade effect */
+}
+
+/* CSS animation example */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 2s ease-in-out;
+}
